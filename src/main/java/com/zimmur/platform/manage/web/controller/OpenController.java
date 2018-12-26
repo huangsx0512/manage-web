@@ -45,19 +45,19 @@ public class OpenController extends BaseController {
 		ReturnJsonEntity entity = new ReturnJsonEntity();
 		StatusCodeEnum codeEnum = StatusCodeEnum.CODE100000;
 		try {
-			
+
 			//account.setAccountPwd(MD5.MD5Encode(account.getPassword()).toUpperCase());
-			account = TokenManager.login(account,rememberMe);
-			if(account!=null){
+			account = TokenManager.login(account, rememberMe);
+			if (account != null) {
 				codeEnum = StatusCodeEnum.CODE000000;
 			}
-		/**
-		 * 这里其实可以直接catch Exception，然后抛出 message即可，但是最好还是各种明细catch 好点。。
-		 */
+			/**
+			 * 这里其实可以直接catch Exception，然后抛出 message即可，但是最好还是各种明细catch 好点。。
+			 */
 		} catch (DisabledAccountException e) {
-			codeEnum=StatusCodeEnum.CODE200403;
+			codeEnum = StatusCodeEnum.CODE200403;
 		} catch (Exception e) {
-			codeEnum=StatusCodeEnum.CODE200404;
+			codeEnum = StatusCodeEnum.CODE200404;
 		}
 		entity.init(codeEnum);
 		return entity;
