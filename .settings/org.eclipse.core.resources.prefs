@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/main/webapp/WEB-INF/ftl=UTF-8
+encoding//src/main/webapp/WEB-INF/ftl/centre/auth/check.ftl=UTF-8
+encoding//src/main/webapp/WEB-INF/ftl/centre/auth/edit.ftl=UTF-8
+encoding//src/main/webapp/WEB-INF/ftl/centre/auth/list.ftl=UTF-8
+encoding//src/main/webapp/WEB-INF/ftl/centre/auth/permission/edit.ftl=UTF-8
+encoding//src/main/webapp/WEB-INF/ftl/centre/auth/permission/list.ftl=UTF-8
+encoding//src/main/webapp/WEB-INF/ftl/centre/auth/role/edit.ftl=UTF-8
+encoding//src/main/webapp/WEB-INF/ftl/centre/shiro/account/edit.ftl=UTF-8
+encoding//src/main/webapp/WEB-INF/ftl/centre/shiro/account/list.ftl=UTF-8
+encoding//src/test/java=UTF-8
+encoding/<project>=UTF-8
