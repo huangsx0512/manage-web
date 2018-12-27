@@ -28,8 +28,8 @@ public class OpenController extends BaseController {
 	 * 登录跳转
 	 * @return
 	 */
-	@RequestMapping(value="/login",method=RequestMethod.GET)
-	public ModelAndView login(){
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public ModelAndView login() {
 		return new ModelAndView("open/login");
 	}
 	/**
@@ -40,8 +40,8 @@ public class OpenController extends BaseController {
 	 * @return
 	 */
 	@ResponseBody
-	@RequestMapping(value="/submitLogin",method=RequestMethod.POST)
-	public ReturnJsonEntity submitLogin(Account account,Boolean rememberMe,HttpServletRequest request){
+	@RequestMapping(value = "/submitLogin", method = RequestMethod.POST)
+	public ReturnJsonEntity submitLogin(Account account, Boolean rememberMe, HttpServletRequest request) {
 		ReturnJsonEntity entity = new ReturnJsonEntity();
 		StatusCodeEnum codeEnum = StatusCodeEnum.CODE100000;
 		try {
