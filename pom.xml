@@ -226,6 +226,25 @@
 		</dependency>
 
 	</dependencies>
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<runtime.env>dev</runtime.env>
+				<final.name>ROOT</final.name>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<properties>
+				<runtime.env>prod</runtime.env>
+				<final.name>ROOT</final.name>
+			</properties>
+		</profile>
+	</profiles>
 	<build>
 		<finalName>manage-web</finalName>
 		<resources>
