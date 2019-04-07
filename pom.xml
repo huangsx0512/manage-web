@@ -224,8 +224,32 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-
 	</dependencies>
+	<!--无需在某个项目中配置私有仓库，在setting中配置全局就行-->
+	<!--<repositories>
+		<repository>
+			<id>qingning</id>
+			<name>qingning</name>
+			<url>http://192.168.58.131:8081/repository/qingning/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+	</repositories>-->
+	<!--jar上传到nexus服务器，仓库id为qingning，当然还可以仓库属性为hosted其他的所有仓库-->
+	<distributionManagement>
+		<repository>
+			<id>qingning</id>
+			<url>http://192.168.58.131:8081/repository/qingning/</url>
+		</repository>
+		<snapshotRepository>
+			<id>qingning</id>
+			<url>http://192.168.58.131:8081/repository/qingning/</url>
+		</snapshotRepository>
+	</distributionManagement>
 	<profiles>
 		<profile>
 			<id>dev</id>
