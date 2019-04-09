@@ -1,6 +1,8 @@
 package com.zimmur.platform.manage.web.domain.model;
 
-public class RoleMent {
+import java.io.Serializable;
+
+public class RoleMent implements Serializable {
     private Integer id;
 
     private Integer roleId;

@@ -1,6 +1,8 @@
 package com.zimmur.platform.manage.web.domain.model;
 
-public class AppRole {
+import java.io.Serializable;
+
+public class AppRole implements Serializable {
     private Integer id;
 
     private Integer appId;

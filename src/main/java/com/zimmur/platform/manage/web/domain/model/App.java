@@ -1,6 +1,8 @@
 package com.zimmur.platform.manage.web.domain.model;
 
-public class App {
+import java.io.Serializable;
+
+public class App implements Serializable {
     private Integer id;
 
     private String code;

@@ -1,6 +1,8 @@
 package com.zimmur.platform.manage.web.domain.model;
 
-public class AccountRolePermission {
+import java.io.Serializable;
+
+public class AccountRolePermission implements Serializable {
     private Integer id;
 
     private Integer roleId;

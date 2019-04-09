@@ -1,8 +1,9 @@
 package com.zimmur.platform.manage.web.domain.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Ment {
+public class Ment implements Serializable {
     private Integer id;
 
     private String apiServer;
